@@ -11,7 +11,7 @@
 <body>
 <!-- navBar -->
 <nav class="relative container mx-auto p-6">
-    <div class="flex items-center justify-between">
+   <div class="flex items-center justify-between">
         <div class="pt-2">
             <img src="/img/logo.svg" alt="logo">
         </div>
@@ -24,7 +24,29 @@
         </div>
         <a href="#" class="hidden md:block p-3 px-6 pt-2 text-white rounded-full
          bg-brightRed baseline transition-all hover:bg-brightRedLight lg:text-lg">Get Started</a>
+      <!-- hamburger menu -->
+     <button id="menu-btn" class="block hamburger focus:outline-none md:hidden">
+       <span class="hamburger-top"></span>
+       <span class="hamburger-middle"></span>
+       <span class="hamburger-bottom"></span>
+      </button>
     </div>
+
+    <!--Mobile menu -->
+     <div class="md:hidden">
+       <div
+         id="menu"
+         class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 
+         font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+       >
+         <a href="#">Pricing</a>
+         <a href="#">Product</a>
+         <a href="#">About Us</a>
+         <a href="#">Careers</a>
+         <a href="#">Community</a>
+       </div>
+     </div>
+    
 </nav>
 <!-- hearo Section -->  
 <section id="hero">
@@ -310,5 +332,6 @@ Go
 </div>
  </div> 
 </footer>
+<script src="./main.js"></script>
 </body>
 </html>
