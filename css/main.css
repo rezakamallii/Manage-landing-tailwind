@@ -679,6 +679,10 @@ video {
   flex: 1 1 0%;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -761,10 +765,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.self-end {
-  align-self: flex-end;
 }
 
 .rounded-full {
@@ -1036,10 +1036,6 @@ body {
 @media (min-width: 480px) {
   .sm\:w-auto {
     width: auto;
-  }
-
-  .sm\:self-center {
-    align-self: center;
   }
 }
 
